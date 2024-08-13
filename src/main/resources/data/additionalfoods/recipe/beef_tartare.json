@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB ",
+    "P  ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:bowl"
+    },
+    "B": {
+      "item": "additionalfoods:minced_beef"
+    }
+  },
+  "result": {
+    "id": "additionalfoods:beef_tartare",
+    "count": 1
+  }
+}
+
