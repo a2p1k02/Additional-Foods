@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MM"
+  ],
+  "key": {
+    "M": {
       "item": "minecraft:beef"
     }
-  ],
+  },
   "result": {
     "id": "additionalfoods:minced_beef",
     "count": 1
   }
 }
+

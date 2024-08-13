@@ -18,6 +18,7 @@ public class ModItemGroups {
                 entries.add(ModItems.PUMPKIN_SLICE);
                 entries.add(ModItems.MINCED_BEEF);
                 entries.add(ModItems.BEEF_PATTY);
+                entries.add(ModItems.BEEF_TARTARE);
             }).build());
 
     public static void registerItemGroups() {
