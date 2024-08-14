@@ -3,6 +3,7 @@ package nodomain.a2p1k02.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -21,6 +22,9 @@ public class ModItems {
     public static final Item BEEF_TARTARE = registerItem("beef_tartare",
             new Item(new Item.Settings().food(ModFoodComponents.RAW_BEEF_DISH_COMPONENT)));
 
+    public static final Item DIAMOND_KNIFE = registerItem("diamond_knife",
+            new SwordItem(ModToolMaterial.MATERIAL, new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AdditionalFoods.MOD_ID, name), item);
     }
@@ -33,6 +37,7 @@ public class ModItems {
             entries.add(MINCED_BEEF);
             entries.add(BEEF_PATTY);
             entries.add(BEEF_TARTARE);
+            entries.add(DIAMOND_KNIFE);
         });
     }
 }
