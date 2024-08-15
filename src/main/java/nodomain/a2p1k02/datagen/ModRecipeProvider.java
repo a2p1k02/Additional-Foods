@@ -25,6 +25,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         offerSmelting(exporter, COOKED, RecipeCategory.FOOD, ModItems.BEEF_PATTY, 0.7f, 200, "");
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FLINT_KNIFE, 1)
+                .pattern("F")
+                .pattern("S")
+                .input('F', Items.FLINT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.FLINT_KNIFE)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRON_KNIFE, 1)
                 .pattern("I")
                 .pattern("S")
