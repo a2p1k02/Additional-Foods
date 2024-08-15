@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pumpkin_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": "additionalfoods:pumpkin_slice"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pumpkin"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pumpkin_slice"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pumpkin"
+    ]
+  }
+}

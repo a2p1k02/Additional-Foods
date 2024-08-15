@@ -15,11 +15,16 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(
                     Text.translatable("itemgroup.pumpkin_slice")).icon(() ->
                     new ItemStack(ModItems.PUMPKIN_SLICE)).entries((displayContext, entries) -> {
+                entries.add(ModItems.TOMATO_SEEDS);
                 entries.add(ModItems.PUMPKIN_SLICE);
+                entries.add(ModItems.TOMATO);
+                entries.add(ModItems.TOMATO_SOUP);
                 entries.add(ModItems.MINCED_BEEF);
                 entries.add(ModItems.BEEF_PATTY);
                 entries.add(ModItems.BEEF_TARTARE);
+                entries.add(ModItems.IRON_KNIFE);
                 entries.add(ModItems.DIAMOND_KNIFE);
+                entries.add(ModItems.NETHERITE_KNIFE);
             }).build());
 
     public static void registerItemGroups() {
