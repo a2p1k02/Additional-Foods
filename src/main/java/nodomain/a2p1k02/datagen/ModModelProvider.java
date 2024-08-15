@@ -30,8 +30,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MINCED_BEEF, Models.GENERATED);
         itemModelGenerator.register(ModItems.BEEF_PATTY, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.IRON_KNIFE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DIAMOND_KNIFE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.NETHERITE_KNIFE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FLINT_KNIFE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_KNIFE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_KNIFE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_KNIFE, Models.HANDHELD);
     }
 }

@@ -8,10 +8,10 @@ import net.minecraft.registry.tag.TagKey;
 
 public enum KnifeMaterial implements ToolMaterial {
 
-    KNIFE_FLINT(250, 2, 3, 10, Ingredient.ofItems(Items.FLINT)),
-    KNIFE_IRON(450, 2, 5, 15, Ingredient.ofItems(Items.IRON_INGOT)),
-    KNIFE_DIAMOND(650, 2, 6, 20, Ingredient.ofItems(Items.DIAMOND)),
-    KNIFE_NETHERITE(850, 2, 7, 20, Ingredient.ofItems(Items.NETHERITE_INGOT));
+    KNIFE_FLINT(250, 2, 1, 10, Ingredient.ofItems(Items.FLINT)),
+    KNIFE_IRON(450, 2, 3, 15, Ingredient.ofItems(Items.IRON_INGOT)),
+    KNIFE_DIAMOND(650, 2, 4, 20, Ingredient.ofItems(Items.DIAMOND)),
+    KNIFE_NETHERITE(850, 2, 5, 20, Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private final int durability;
     private final float miningSpeed;

@@ -9,6 +9,10 @@ import nodomain.a2p1k02.AdditionalFoods;
 import nodomain.a2p1k02.block.ModBlocks;
 
 public class ModItems {
+
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
+            new AliasedBlockItem(ModBlocks.TOMATO_CROP, new Item.Settings()));
+
     public static final Item PUMPKIN_SLICE = registerItem("pumpkin_slice",
             new Item(new Item.Settings().food(ModFoodComponents.FRUIT_SLICE_COMPONENT)));
 
@@ -27,17 +31,25 @@ public class ModItems {
     public static final Item BEEF_TARTARE = registerItem("beef_tartare",
             new Item(new Item.Settings().food(ModFoodComponents.RAW_BEEF_DISH_COMPONENT)));
 
-    public static final Item DIAMOND_KNIFE = registerItem("diamond_knife",
-            new SwordItem(KnifeMaterial.KNIFE_DIAMOND, new Item.Settings()));
+    public static final Item FLINT_KNIFE = registerItem("flint_knife",
+            new SwordItem(KnifeMaterial.KNIFE_FLINT, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(
+                            KnifeMaterial.KNIFE_FLINT, 1, -2.4f))));
 
     public static final Item IRON_KNIFE = registerItem("iron_knife",
-            new SwordItem(KnifeMaterial.KNIFE_IRON, new Item.Settings()));
+            new SwordItem(KnifeMaterial.KNIFE_IRON, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(
+                            KnifeMaterial.KNIFE_IRON, 1, -2.4f))));
+
+    public static final Item DIAMOND_KNIFE = registerItem("diamond_knife",
+            new SwordItem(KnifeMaterial.KNIFE_DIAMOND, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(
+                            KnifeMaterial.KNIFE_DIAMOND, 1, -2.4f))));
 
     public static final Item NETHERITE_KNIFE = registerItem("netherite_knife",
-            new SwordItem(KnifeMaterial.KNIFE_NETHERITE, new Item.Settings().fireproof()));
-
-    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
-            new AliasedBlockItem(ModBlocks.TOMATO_CROP, new Item.Settings()));
+            new SwordItem(KnifeMaterial.KNIFE_NETHERITE, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(
+                            KnifeMaterial.KNIFE_NETHERITE, 1, -2.4f))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AdditionalFoods.MOD_ID, name), item);
