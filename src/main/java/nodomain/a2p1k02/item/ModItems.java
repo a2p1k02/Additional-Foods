@@ -69,6 +69,7 @@ public class ModItems {
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(FLINT_KNIFE);
             entries.add(IRON_KNIFE);
             entries.add(DIAMOND_KNIFE);
             entries.add(NETHERITE_KNIFE);

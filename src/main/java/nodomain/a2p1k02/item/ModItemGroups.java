@@ -22,6 +22,7 @@ public class ModItemGroups {
                 entries.add(ModItems.MINCED_BEEF);
                 entries.add(ModItems.BEEF_PATTY);
                 entries.add(ModItems.BEEF_TARTARE);
+                entries.add(ModItems.FLINT_KNIFE);
                 entries.add(ModItems.IRON_KNIFE);
                 entries.add(ModItems.DIAMOND_KNIFE);
                 entries.add(ModItems.NETHERITE_KNIFE);
