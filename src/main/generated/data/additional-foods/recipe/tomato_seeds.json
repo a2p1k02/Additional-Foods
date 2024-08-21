@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "pattern": [
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "additional-foods:tomato_seeds"
+  }
+}

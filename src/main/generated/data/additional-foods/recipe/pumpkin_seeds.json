@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "additional-foods:pumpkin_slice"
+    }
+  },
+  "pattern": [
+    "P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:pumpkin_seeds"
+  }
+}

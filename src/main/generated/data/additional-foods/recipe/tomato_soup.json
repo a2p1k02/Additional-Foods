@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "T": {
+      "item": "additional-foods:tomato"
+    }
+  },
+  "pattern": [
+    "TT",
+    "B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "additional-foods:tomato_soup"
+  }
+}

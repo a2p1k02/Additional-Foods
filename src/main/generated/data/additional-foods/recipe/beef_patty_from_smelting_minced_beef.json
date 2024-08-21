@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "additional-foods:minced_beef"
+  },
+  "result": {
+    "id": "additional-foods:beef_patty"
+  }
+}

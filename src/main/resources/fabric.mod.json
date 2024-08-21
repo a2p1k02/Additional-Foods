@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "additionalfoods",
+	"id": "additional-foods",
 	"version": "${version}",
 	"name": "Additional Foods",
 	"description": "This is mod which adds a lot of additional foods",
@@ -9,10 +9,10 @@
 	],
 	"contact": {
 		"homepage": "https://github.com/a2p1k02/",
-		"sources": "https://github.com/a2p1k02/AdditionalFoods"
+		"sources": "https://github.com/a2p1k02/Additional-Foods"
 	},
 	"license": "MIT",
-	"icon": "assets/additionalfoods/icon.png",
+	"icon": "assets/additional-foods/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,10 +26,10 @@
 		]
 	},
 	"mixins": [
-      "additionalfoods.mixins.json"
+		"additional-foods.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
+		"fabricloader": ">=0.16.2",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
